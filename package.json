@@ -4,7 +4,7 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "dev": "tsc --watch",
+        "dev": "nodemon src/server.ts",
         "start": "nodemon ./dist/server.js",
         "build": "tsc",
         "prepare": "husky",
@@ -22,13 +22,16 @@
         "@types/eslint__js": "^8.42.3",
         "dotenv": "^16.4.5",
         "eslint": "^9.10.0",
+        "express": "^4.21.0",
         "lint-staged": "^15.2.10",
         "prettier": "^3.3.3",
         "typescript-eslint": "^8.6.0"
     },
     "devDependencies": {
+        "@types/express": "^4.17.21",
         "@types/node": "^22.5.5",
         "husky": "^9.1.6",
+        "ts-node": "^10.9.2",
         "typescript": "^5.4.5"
     },
     "lint-staged": {

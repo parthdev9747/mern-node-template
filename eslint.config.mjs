@@ -1,12 +1,20 @@
 // @ts-check
 
-import eslint from '@eslint/js';
-import tseslint from 'typescript-eslint';
+import eslint from "@eslint/js";
+import tseslint from "typescript-eslint";
 
 export default tseslint.config(
     eslint.configs.recommended,
     ...tseslint.configs.recommended,
     {
-        ignores: ['node_modules', 'build'],
+        rules: {
+            "no-console": "error",
+            "dot-notation": "error",
+            "@typescript-eslint/require-await": "off",
+            "@typescript-eslint/no-unsafe-assignment": "off",
+        },
+    },
+    {
+        ignores: ["node_modules", "build"],
     }
 );
