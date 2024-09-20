@@ -1,3 +1,3 @@
-import config from "./config/config"
+import config from './config/config';
 
-console.log("Port No: "+config.port);
+console.log('Application is running on port no: ' + config.port);
