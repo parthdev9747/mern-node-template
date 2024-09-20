@@ -1,11 +1,11 @@
 {
-  "compilerOptions": {
-    "module": "CommonJS",
-    "target": "ES2022",
-    "rootDir": "./src",
-    "outDir": "./dist",
-    "sourceMap": false
-  },
-  "include": ["src/**/*.ts"],
-  "exclude": ["node_modules"]
+    "compilerOptions": {
+        "module": "CommonJS",
+        "target": "ES2022",
+        "rootDir": "./src",
+        "outDir": "./dist",
+        "sourceMap": false
+    },
+    "include": ["src/**/*.ts"],
+    "exclude": ["node_modules"]
 }
