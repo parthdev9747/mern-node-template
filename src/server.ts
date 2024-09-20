@@ -1,6 +1,7 @@
 import app from "./app";
 import config from "./config/config";
 import logger from "./config/logger";
+import { globalErrorHandler } from "./middleware/globalErrorHandler";
 
 const startServer = async () => {
     const port = config.port;
@@ -18,3 +19,5 @@ const startServer = async () => {
 };
 
 startServer();
+
+app.use(globalErrorHandler);
