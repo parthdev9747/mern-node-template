@@ -2,7 +2,7 @@
 
 ## Description
 
-A brief description of your project and its purpose.
+A boilerplate project that provides a foundational structure for building web applications using Node.js and TypeScript. It includes essential tools and libraries to streamline development and ensure code quality.
 
 ## Package Used
 
