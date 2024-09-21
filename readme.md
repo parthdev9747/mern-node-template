@@ -21,11 +21,3 @@ A boilerplate project that provides a foundational structure for building web ap
 1. Clone the repository.
 2. Install NVM and use it to install the required Node.js version.
 3. Run `npm install` to install dependencies.
-
-## Usage
-
-Instructions on how to run the application.
-
-## Running Tests
-
-To run the automated tests, use:
