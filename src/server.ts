@@ -8,7 +8,7 @@ const startServer = async () => {
 
     try {
         app.listen(port, () => {
-            logger.info(`Server is running ${port}`);
+            logger.info(`Server is running no ${port}`);
         });
     } catch (error) {
         logger.error(`Failed to listen on ${port}`, error.message);

@@ -15,9 +15,15 @@ A boilerplate project that provides a foundational structure for building web ap
 -   **Logger**: A logging utility for tracking application events.
 -   **Global Error Handler**: A centralized error handling mechanism.
 -   **Automated Testing**: Using Jest and Supertest for unit and integration tests.
+-   **Docker**: A platform for developing, shipping, and running applications in containers. This project includes Docker configurations to simplify the setup and deployment process. You can run the application in a containerized environment using the provided Docker commands.
 
 ## Installation
 
 1. Clone the repository.
 2. Install NVM and use it to install the required Node.js version.
 3. Run `npm install` to install dependencies.
+
+## Docker
+
+1. Build image `docker build -t auth-service:dev -f .\docker\dev\Dockerfile .  `
+2. Run container `docker run --rm -it -v "projectfolder:/usr/src/app" -v "/usr/src/app/node_modules" --env-file "projectfolder\.env" -p 5501:5501 -e NODE_ENV=development auth-service:dev`
